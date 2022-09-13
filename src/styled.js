@@ -55,7 +55,6 @@ export const DivFichas = styled.div `
     font-family: Arial, Helvetica, sans-serif;
     margin: 30px auto;
     width: 60%;
-    border: 1px solid;
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
