@@ -31,6 +31,11 @@ export const FormsStyle = styled.form `
         outline-color: #050152;
     }
 
+    span {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
     .divButton {
         margin-top: 20px;
         display: flex;
