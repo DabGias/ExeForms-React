@@ -20,11 +20,9 @@ function Forms() {
     })
 
     const [listaClientes, setListaClientes] = useState([])
-    const [listaAnimais, setListaAnimais] = useState([])
 
-    function geraFichas(cliente, animal) { 
+    function geraFichas(cliente) { 
         setListaClientes([...listaClientes, cliente])
-        setListaAnimais([...listaAnimais, animal])
     }
 
     function buscarCep(e) {
@@ -126,14 +124,14 @@ function Forms() {
             </DivFichas>
             <DivFichas>
                 {              
-                    listaAnimais.map((ani, indexAnimal) =>
+                    listaClientes.map((cliAnimal, indexAnimal) =>
                         <div className="fichaAnimal" key={indexAnimal}>
                             <h1>Animal</h1>
 
-                            <p>Nome: {ani.nomeAnimal}</p>
-                            <p>Idade: {ani.idadeAnimal}</p>
-                            <p>Raça: {ani.racaAnimal}</p>
-                            <p>Tamanho: {ani.tamanhoAnimal}</p>
+                            <p>Nome: {cliAnimal.nomeAnimal}</p>
+                            <p>Idade: {cliAnimal.idadeAnimal}</p>
+                            <p>Raça: {cliAnimal.racaAnimal}</p>
+                            <p>Tamanho: {cliAnimal.tamanhoAnimal}</p>
                         </div>
                     )
                 }
